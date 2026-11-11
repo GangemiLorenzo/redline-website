@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redline: Trading Duels</title>
+<meta name="description" content="Two players trade the same hidden chart. Higher balance wins.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://redline.lorenzogangemi.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Redline">
+<meta property="og:title" content="Redline: Trading Duels">
+<meta property="og:description" content="Two players trade the same hidden chart. Higher balance wins.">
+<meta property="og:url" content="https://redline.lorenzogangemi.com/">
+<meta name="twitter:card" content="summary">
+</head>
+<body class="home">
+<header><div class="wrap"><a class="brand" href="./">Redline</a><nav aria-label="Main"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="support/">Support</a></nav></div></header>
+<main>
+<section class="hero wide">
+<div class="copy">
+<h1>Out-trade a friend</h1>
+<p class="lead">Two players trade the same hidden chart. The higher balance wins.</p>
+<div class="stores" role="group" aria-label="Download">
+<button type="button" disabled aria-disabled="true"><small>Coming soon</small>App Store</button>
+<button type="button" disabled aria-disabled="true"><small>Coming soon</small>Google Play</button>
+</div>
+</div>
+<div class="app" role="img" aria-label="The Redline match screen: you and your rival trade the same chart, buy and sell, and your balances update after each trade">
+<div class="hud" aria-hidden="true">
+<div class="side"><span class="name you">You</span><b class="num" id="n-you">10,000.00</b><span class="pct" id="p-you">+0.00%</span></div>
+<div class="clk" id="clk">1:30</div>
+<div class="side them"><span class="name">Rival</span><b class="num" id="n-rival">10,000.00</b><span class="pct" id="p-rival">+0.00%</span></div>
+</div>
+<div class="lean" aria-hidden="true"><i id="lean"></i><u></u></div>
+<canvas id="chart" aria-hidden="true"></canvas>
+<div class="slot" aria-hidden="true"><div class="card" id="card"><div class="info"><span id="card-name">Long 3x</span><b id="card-pnl">+0.00</b></div><span class="close">Close</span></div></div>
+<div class="btns" aria-hidden="true"><span class="btn" id="btn-short">Short ▼</span><span class="btn" id="btn-long">Long ▲</span></div>
+</div>
+</section>
+
+<section class="wide flow">
+<h2>How a duel works</h2>
+<div class="cols">
+<div><h3>Share a code</h3><p>Pick a mode and send the match code to a friend.</p></div>
+<div><h3>Trade the hidden chart</h3><p>Go long or short with up to 5x leverage. You both see the same candles. The symbol and date stay hidden.</p></div>
+<div><h3>Highest balance wins</h3><p>You both start with 10,000. When the clock ends the chart is revealed and your ratings update.</p></div>
+</div>
+</section>
+
+<section class="wide flow">
+<h2>Pick a mode</h2>
+<div class="cols">
+<div><h3>Classic</h3><p>Replay a real price chart from the past, one candle at a time.</p></div>
+<div><h3>Live</h3><p>Trade BTC, ETH or SOL as the price moves right now.</p></div>
+<div><h3>Train alone</h3><p>No opponent and no rating. Practise at your own pace.</p></div>
+</div>
+<p class="dim note">Each mode keeps its own rating. Redline is a game: the money is simulated and has no value. Nothing here is financial advice.</p>
+</section>
+</main>
+<footer><div class="wrap"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="support/">Support</a><a href="mailto:lorenzo.gangemi.developer@gmail.com">Contact</a><p>Made by Lorenzo Gangemi. Redline is a game; money in it is simulated.</p></div></footer>
+<script src="duel.js"></script>
+</body>
+</html>
